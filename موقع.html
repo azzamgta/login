@@ -20,6 +20,18 @@
         <label for="password" 6>password</label>
         <input maxlength="10" id="password" type="password" placeholder="password" required name="password">
       </div>
+       <script>
+        function checkPassword()
+        {
+          let password = document.getElementById('password').value
+          if (password != "123")
+          {
+            alert("كلمة مرور خاطئة")
+          }
+        }
+        
+      </script>
+
       <input type="submit" value="اضغط هنا">
     </fieldset>
   </form>
@@ -32,7 +44,9 @@
       <option value="usa">Usa</option>
       <option value="uae">Uae</option>
     </select>
-    <input type="submit">
+    <a href="بيانات.html">
+    <input type="submit" onclick="checkpassword()">
+    </a>
   </form>
 
 </body>
